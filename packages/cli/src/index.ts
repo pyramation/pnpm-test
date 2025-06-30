@@ -22,5 +22,3 @@ export class WebQLCLI {
     return packageJson.version;
   }
 }
-
-export * from '@webql/core'; 
