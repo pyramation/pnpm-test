@@ -1,4 +1,5 @@
 import { WebQLCore, WebQLConfig } from '@webql/core';
+import * as packageJson from '../package.json';
 
 export class WebQLCLI {
   private core: WebQLCore;
@@ -18,7 +19,7 @@ export class WebQLCLI {
   }
 
   getVersion(): string {
-    return require('../package.json').version;
+    return packageJson.version;
   }
 }
 

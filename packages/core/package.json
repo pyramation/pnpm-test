@@ -3,15 +3,20 @@
   "version": "0.0.0",
   "description": "Core functionality for WebQL",
   "main": "./index.js",
-  "module": "./index.mjs",
   "types": "./index.d.ts",
+  "module": "./esm/index.js",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public",
     "directory": "dist"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "copy": "cp -r ../../LICENSE README.md package.json dist",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build",
+    "build": "npm run clean; tsc; tsc -p tsconfig.esm.json; npm run copy",
     "test": "vitest"
   },
   "keywords": [
