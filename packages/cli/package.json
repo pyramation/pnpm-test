@@ -1,0 +1,39 @@
+{
+  "name": "@webql/cli",
+  "version": "0.0.0",
+  "description": "Command line interface for WebQL",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "webql": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts src/cli.ts --format cjs,esm --dts --watch",
+    "test": "vitest"
+  },
+  "keywords": [
+    "webql",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@webql/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.4",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
