@@ -23,7 +23,7 @@ importers:
 
   packages/cli:
     dependencies:
-      '@webql/core':
+      '@pyramation/webql-core':
         specifier: workspace:*
         version: link:../core/dist
     publishDirectory: dist

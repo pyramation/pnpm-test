@@ -1,5 +1,5 @@
 {
-  "name": "@webql/cli",
+  "name": "@pyramation/webql-cli",
   "version": "0.0.0",
   "description": "Command line interface for WebQL",
   "main": "./index.js",
@@ -25,6 +25,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@webql/core": "workspace:*"
+    "@pyramation/webql-core": "workspace:*"
   }
 }

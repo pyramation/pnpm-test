@@ -1,4 +1,4 @@
-import { WebQLCore, WebQLConfig } from '@webql/core';
+import { WebQLCore, WebQLConfig } from '@pyramation/webql-core';
 import * as packageJson from '../package.json';
 
 export class WebQLCLI {
