@@ -22,8 +22,8 @@ importers:
         version: link:../core
     devDependencies:
       '@types/node':
-        specifier: ^24.0.7
-        version: 24.0.7
+        specifier: ^22.10.4
+        version: 22.15.34
       tsup:
         specifier: ^8.0.0
         version: 8.5.0(postcss@8.5.6)(typescript@5.8.3)
@@ -32,13 +32,13 @@ importers:
         version: 5.8.3
       vitest:
         specifier: ^1.0.0
-        version: 1.6.1(@types/node@24.0.7)
+        version: 1.6.1(@types/node@22.15.34)
 
   packages/core:
     devDependencies:
       '@types/node':
-        specifier: ^24.0.7
-        version: 24.0.7
+        specifier: ^22.10.4
+        version: 22.15.34
       tsup:
         specifier: ^8.0.0
         version: 8.5.0(postcss@8.5.6)(typescript@5.8.3)
@@ -47,7 +47,7 @@ importers:
         version: 5.8.3
       vitest:
         specifier: ^1.0.0
-        version: 1.6.1(@types/node@24.0.7)
+        version: 1.6.1(@types/node@22.15.34)
 
 packages:
 
@@ -550,8 +550,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@24.0.7':
-    resolution: {integrity: sha512-YIEUUr4yf8q8oQoXPpSlnvKNVKDQlPMWrmOcgzoduo7kvA2UF0/BwJ/eMKFTiTtkNL17I0M6Xe2tvwFU7be6iw==}
+  '@types/node@22.15.34':
+    resolution: {integrity: sha512-8Y6E5WUupYy1Dd0II32BsWAx5MWdcnRd8L84Oys3veg1YrYtNtzgO4CFhiBg6MDSjk7Ay36HYOnU7/tuOzIzcw==}
 
   '@vitest/expect@1.6.1':
     resolution: {integrity: sha512-jXL+9+ZNIJKruofqXuuTClf44eSpcHlgj3CiuNihUF3Ioujtmc0zIa3UJOW5RjDK1YLBJZnWBlPuqhYycLioog==}
@@ -1274,8 +1274,8 @@ packages:
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
-  undici-types@7.8.0:
-    resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   universalify@0.1.2:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
@@ -1784,9 +1784,9 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@24.0.7':
+  '@types/node@22.15.34':
     dependencies:
-      undici-types: 7.8.0
+      undici-types: 6.21.0
 
   '@vitest/expect@1.6.1':
     dependencies:
@@ -2498,17 +2498,17 @@ snapshots:
 
   ufo@1.6.1: {}
 
-  undici-types@7.8.0: {}
+  undici-types@6.21.0: {}
 
   universalify@0.1.2: {}
 
-  vite-node@1.6.1(@types/node@24.0.7):
+  vite-node@1.6.1(@types/node@22.15.34):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       pathe: 1.1.2
       picocolors: 1.1.1
-      vite: 5.4.19(@types/node@24.0.7)
+      vite: 5.4.19(@types/node@22.15.34)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2520,16 +2520,16 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.4.19(@types/node@24.0.7):
+  vite@5.4.19(@types/node@22.15.34):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.6
       rollup: 4.44.1
     optionalDependencies:
-      '@types/node': 24.0.7
+      '@types/node': 22.15.34
       fsevents: 2.3.3
 
-  vitest@1.6.1(@types/node@24.0.7):
+  vitest@1.6.1(@types/node@22.15.34):
     dependencies:
       '@vitest/expect': 1.6.1
       '@vitest/runner': 1.6.1
@@ -2548,11 +2548,11 @@ snapshots:
       strip-literal: 2.1.1
       tinybench: 2.9.0
       tinypool: 0.8.4
-      vite: 5.4.19(@types/node@24.0.7)
-      vite-node: 1.6.1(@types/node@24.0.7)
+      vite: 5.4.19(@types/node@22.15.34)
+      vite-node: 1.6.1(@types/node@22.15.34)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 24.0.7
+      '@types/node': 22.15.34
     transitivePeerDependencies:
       - less
       - lightningcss
